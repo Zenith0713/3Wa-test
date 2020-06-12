@@ -1,0 +1,50 @@
+{
+    "ace": {
+        "@behavioursEnabled": true,
+        "@cursorStyle": "ace",
+        "@fontSize": 13,
+        "@keyboardmode": "default",
+        "@showGutter": true,
+        "@showInvisibles": false,
+        "@theme": "ace/theme/cloud9_night_low_color",
+        "statusbar": {
+            "@show": true
+        }
+    },
+    "collab": {
+        "@timeslider-visible": false
+    },
+    "debug": {
+        "@pause": 0
+    },
+    "general": {
+        "@skin": "dark"
+    },
+    "imgeditor": {
+        "@smooth": false,
+        "@zoom": 100
+    },
+    "openfiles": {
+        "@show": false
+    },
+    "output": {
+        "@backgroundColor": "#003a58",
+        "@foregroundColor": "#FFFFFF",
+        "@selectionColor": "#225477"
+    },
+    "projecttree": {
+        "@showhidden": false
+    },
+    "tabs": {
+        "@show": true
+    },
+    "terminal": {
+        "@antialiasedfonts": true,
+        "@backgroundColor": "#153649",
+        "@foregroundColor": "#FFFFFF",
+        "@selectionColor": "#515D77"
+    },
+    "welcome": {
+        "@first": true
+    }
+}

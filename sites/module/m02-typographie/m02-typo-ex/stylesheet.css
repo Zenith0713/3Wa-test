@@ -1,0 +1,114 @@
+html {
+    background-image: url("./img/bunting.png");
+    background-repeat: repeat-x;
+}
+
+body {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/*Mise en place des typograpghys*/
+
+@font-face {
+    font-family: "Blacksword";
+    src: url('/m02-typographie/m02-typo-ex/fonts/Blacksword.otf');
+}
+
+@font-face {
+    font-family: "cardo-bold";
+    src: url("/m02-typographie/m02-typo-ex/fonts/cardo/cardo-bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "cardo-italic";
+    src: url("/m02-typographie/m02-typo-ex/fonts/cardo/cardo-italic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "cardo-regular";
+    src: url("/m02-typographie/m02-typo-ex/fonts/cardo/cardo-regular.woff") format("woff");
+}
+
+/*Mise en place des classes et ids*/
+
+.couleurRose {
+    color:#FFC0CB;
+}
+
+.ital {
+    font-family:"cardo-italic";
+}
+
+.gras {
+    font-family:"cardo-bold";
+}
+
+#auteur {
+    font-family:"cardo-italic";
+    text-align: right;
+}
+
+/*Haut de page*/
+
+header img {
+    width: 100%;
+}
+
+/*Milieu de page*/
+
+header p, main p {
+    font-size: 1.4em;
+    line-height : 50px; 
+    text-indent : 25px;
+    font-family: "cardo-regular";
+}
+
+h1 {
+    font-size: 4em;
+    font-family: "Blacksword";
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    word-spacing : 25px;
+    font-family: "Blacksword";
+}
+
+h3 {
+    font-size: 1.5em;
+    word-spacing : 10px;
+    font-family: "Blacksword";
+}
+
+blockquote{
+    font-size:2.5em;
+    font-family:"cardo-italic";
+    text-align:center;
+}
+
+blockquote p{
+    text-align:right;
+    font-size: 0.5em;
+}
+
+
+/*Bas de page*/
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    height: 50px;
+    width: 55px;
+    text-align: center; 
+    margin-top: 50px;
+    margin-bottom:0;
+}
+
+footer p {
+    font-size: 8px;
+    margin-bottom: 25px;
+}

@@ -1,0 +1,106 @@
+html {
+    background-image: url("../img/fond.png");
+}
+
+header, main {
+    max-width: 750px;
+    margin-left: 30%;
+    margin-right: 25%;
+}
+
+/*Haut de page*/
+
+header {
+    background-color: #B8CB21;
+    padding-right:40px;
+}
+
+nav {
+    float: right;
+    font-size: 1.3em;
+    font-family: "Oswald";
+    padding-top: 4%;
+}
+
+nav li {
+    list-style:none;
+    display: inline;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    padding-right: 40px;
+}
+
+/*Milieu de page*/
+
+main {
+    background-color: white;
+    padding: 20px;
+    margin-top: 0;
+}
+
+section img {
+    float: left;
+    padding-right: 10px;
+    width: 30%;
+}
+
+
+h2 {
+    color: #B8CB21;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-direction: alternate;
+}
+
+@keyframes slide {
+     from {
+    margin-left: 90%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+section .read { 
+    display: block;
+    width: 100px;
+    height: 35px;
+    background-color: #B8CB21;
+    display: flex;
+    margin-left: 85%;
+    align-items: center;
+    justify-content: center;
+    clear: right;
+}
+
+section a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Bas de page*/
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+    text-align: center; 
+    margin-top: 50px;
+    margin-bottom:0;
+}
+
+footer p {
+    font-size: 8px;
+    margin-bottom: 25px;
+}
