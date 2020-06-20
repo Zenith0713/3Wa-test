@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:1em;
+}
+
+#titre, nav, th {
+    font-family: "Kaushan Script";
+}
+
+.titre1, p, caption, section h2, form {
+    font-family: "Playfair Display";
+    font-weight: normal;
+}
+
+/*Haut de page*/
+
+.header1 {
+    margin: 0;
+    width: 100%;
+    height: 550px;
+    background-image: url("../img/fond.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    padding: 10px;
+    background-color: rgba(219, 201, 243, 0.5);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav i {
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#promo {
+    background-color: rgba(218, 196, 235, 0.5);
+    padding: 10px;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+
+.header1 h2 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 50px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+/*Milieu de page*/
+
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+
+
+/*Tableaux*/
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+
+caption {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px;
+}
+
+td, th {
+    border: 1px solid grey;
+}
+
+th {
+    text-align: left;
+    padding: 15px;
+    background-color: #C4A5DE;
+    color: white;
+    font-size: 1.6em;
+}
+
+td {
+    padding: 10px;
+}
+
+td a {
+    text-decoration: none;
+    color: blue;
+}
+
+td:nth-child(2), td:nth-child(3) {
+    text-align: center;
+}
+
+tr:nth-child(2n+1) {
+    background-color: #EFEFEF;
+}
+
+
+/*Formulaire*/
+
+section h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+
+fieldset {
+    height: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type=text], input[type=email] {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+
+label, input {
+    font-size: 0.9em;
+    margin: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+label {
+    margin-right: 0;
+}
+
+input {
+    margin-left: 0;
+}
+
+select {
+    font-size: 0.9em;
+    margin: 20px;
+    vertical-align: middle;
+    padding: 8px;
+    padding-right: 81%;
+}
+
+select option {
+    text-align: left;
+}
+
+input[type=submit], input[type=reset] {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: #8B5BC4;
+}
+
+input[type=submit] {
+    margin-left: 45%;
+}
+
+
+/*Bas de page*/
+
+footer {
+    margin-top: 0;
+    background-image: url("../img/background_section.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    clear: both;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+    text-align: center; 
+    margin-top: 50px;
+    margin-bottom:0;
+}
+
+footer p {
+    font-size: 8px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+footer a {
+    color: blue;
+}

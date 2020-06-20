@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:1em;
+}
+
+#titre, nav {
+    font-family: "Kaushan Script";
+}
+
+.titre1, p {
+    font-family: "Playfair Display";
+    font-weight: normal;
+}
+
+/*Haut de page*/
+
+.header1 {
+    margin: 0;
+    width: 100%;
+    height: 550px;
+    background-image: url("../img/fond.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    padding: 10px;
+    background-color: rgba(219, 201, 243, 0.5);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav i {
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#promo {
+    background-color: rgba(218, 196, 235, 0.5);
+    padding: 10px;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+
+.header1 h2 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 50px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+
+/*Milieu de page*/
+
+/*1ere section*/
+
+.section1 article {
+    margin: 20px;
+}
+
+.section1 .titre1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.section1 p {
+    text-align: left;
+    margin-bottom: 120px;
+}
+
+/*1ere article*/
+
+.img1 {
+    float: left;
+    margin-right: 10px;
+    width: 300px;
+    height: 150px;
+}
+
+/*2eme article*/
+
+.img2 {
+    float: right;
+    margin-left: 10px;
+    width: 300px;
+    height: 150px;
+}
+
+/*2eme section*/
+
+.section2 {
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/background_section.jpg");
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+
+/*1er article*/
+
+.article1 .titre1 {
+    padding-top: 50px;
+}
+
+.article1 {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+}
+
+.article1 img {
+    width: 200px;
+    height: 200px;
+}
+
+.article1 p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*2eme article*/
+
+.article2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    text-align: center;
+}
+
+.article2 img {
+    width: 200px;
+    height: 200px;
+}
+
+.article2 p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.article2 .titre1 {
+    padding-top: 50px;
+}
+
+/*3eme article*/
+
+.article3 {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    text-align: center;
+}
+
+.article3 img {
+    width: 200px;
+    height: 200px;
+}
+
+.article3 p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.article3 .titre1 {
+    padding-top: 50px;
+}
+
+/*Map*/
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/*Bas de page*/
+
+footer {
+    margin-top: 0;
+    background-image: url("../img/background_section.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    clear: both;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+    text-align: center; 
+    margin-top: 50px;
+    margin-bottom:0;
+}
+
+footer p {
+    font-size: 8px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}

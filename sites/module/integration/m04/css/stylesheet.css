@@ -1,0 +1,201 @@
+html {
+    background-image: url("../img/fond.png");
+}
+
+body {
+    text-align: center;
+    font-size: 1em;
+}
+
+
+nav, .titre {
+    font-family: "Slabo 27px", serif;
+    font-weight: normal;
+}
+
+p {
+    font-family: "Open Sans";
+}
+
+#goutte {
+    color: #25B3B4;
+}
+
+#msg {
+    color: white;
+}
+
+/*Haut de page*/
+
+header {
+    margin-top: 4%;
+    text-align: center;
+    background-color: #25B3B4;
+    border-top: 4px solid #009DA3;
+    border-bottom: 4px solid #009DA3;
+}
+
+header img {
+    width: 192px;
+    height: 90px;
+    padding-left: 40px;
+}
+
+nav li {
+    list-style:none;
+    display: inline;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Milieu de page*/
+
+main {
+    min-width: 800px;
+    max-width: 1100px;
+    margin-left: 27%;
+    margin-right: 25%;
+    line-height: 1.5em;
+}
+
+main a {
+    text-decoration: none;
+}
+
+
+/*Premiere section*/
+
+#welcome {
+    font-size: 2.5em;
+}
+
+#section1 {
+    margin-bottom: 50px;
+}
+
+
+/*Deuxieme section*/
+
+.menu {
+    box-sizing: border-box;
+    background-color: #ADE0DD;
+    width: 69%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#todays {
+    font-size: 3.5em;
+}
+
+span {
+    color: #25B3B4;
+}
+
+.menu article {
+    width: 42%;
+}
+
+
+
+.article1 {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.article2 {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 30px;
+    padding-left: 15px;
+    
+}
+
+.menu .titre {
+    font-size: 1.8em;
+}
+
+.menu img {
+    float: left;
+    border-radius:100%;
+    padding-right: 10px;
+}
+
+.menu p {
+    text-align: left;
+}
+
+.button {
+    display: block;
+    background-color: #25B3B4;
+    float: right;
+    font-size: 0.9em;
+    padding: 8px;
+}
+
+.button a {
+    color: white;
+}
+    
+
+/*Troisieme section*/
+
+aside {
+    box-sizing: border-box;
+    background-color: #25B3B4;
+    border: 4px solid #009DA3;
+    color: white;
+    width: 29%;
+    display: inline-block;
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#news {
+    font-size: 1.4em;
+}
+
+aside img {
+    float: right;
+    margin-right: -65px;
+    margin-top: -65px;
+    width: 126px;
+    height: 125px;
+}
+
+aside span {
+    color: #7dfeff;
+}
+
+aside a {
+    color: #7dfeff;
+}
+
+/*Bas de page*/
+
+footer {
+    text-align: center;
+    clear: both;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+    text-align: center; 
+    margin-top: 50px;
+    margin-bottom:0;
+}
+
+footer p {
+    font-size: 8px;
+    margin-bottom: 25px;
+}

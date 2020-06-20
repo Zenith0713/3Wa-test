@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="./css/normalize.css" />
+        <link type="text/css" rel="stylesheet" href="./css/stylesheet.css" />
+        <script src="https://kit.fontawesome.com/5bd0b90a1c.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Playfair+Display&display=swap" rel="stylesheet">
+        <title>Mon site</title>
+    </head>
+    
+    <body>
+         <header class="header1">
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i>Accueil</a></li>
+                    <li><a href="./calendrier.html" ><i class="fa fa-calendar" ></i>Agenda</a></li>
+                    <li><a href="#" ><i class="fa fa-book" ></i>Livre d'or</a></li>
+                    <li><a href="#" ><i class="fa fa-picture-o" ></i>Album Photo</a></li>
+                    <li><a href="#" ><i class="fa fa-envelope-o" ></i>Nous contacter</a></li>
+                </ul>
+            </nav>
+            
+            <p id="promo">OFFRE PROMO : Votre premier cours d'essai gratuit !</p>
+            
+            <h2 id="titre">Bienvenue sur le site d'Ila Yoga</h2>
+        </header>
+        
+        <main>
+            <section>
+                <article>
+                    <table>
+                        <caption>Réserver votre place pour le prochain cours de Yoga du rire !</caption>
+                        
+                        <thead>
+                            <tr>
+                                <th colspan="3">Yoga du rire avec Jacquelines (Paris)</th>
+                            </tr>
+                        </thead>
+                        
+                            <tbody>
+                            <tr>
+                                <td>05 Janvier 2016</td>
+                                <td>15h30</td>
+                              <td><a href="#formulaire">Réserver ce créneau</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>10 Janvier 2016</td>
+                                <td>16h30</td>
+                                <td><a href="#formulaire">Réserver ce créneau</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>15 Janvier 2016</td>
+                                <td>15h30</td>
+                                <td><a href="#formulaire">Réserver ce créneau</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>20 Janvier 2016</td>
+                                <td>16h30</td>
+                                <td><a href="#formulaire">Réserver ce créneau</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                
+                <article>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">Yoga du rire avec Roger (Marseille)</th>
+                            </tr>
+                        </thead>
+                        
+                            <tbody>
+                            <tr>
+                                <td>05 Janvier 2016</td>
+                                <td>15h30</td>
+                              <td><a href="#formulaire">Réserver ce créneau</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>10 Janvier 2016</td>
+                                <td>16h30</td>
+                                <td><a href="#formulaire">Réserver ce créneau</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>15 Janvier 2016</td>
+                                <td>15h30</td>
+                                <td><a href="#formulaire">Réserver ce créneau</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>20 Janvier 2016</td>
+                                <td>16h30</td>
+                                <td><a href="#formulaire">Réserver ce créneau</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+            
+            <section>
+                <h2 id="formulaire">Pour valider votre réservation, compléter ce formulaire :</h2>
+                
+                <form method="post" action="traitement.php">
+                    <fieldset>
+                        <legend>Vos coordonées</legend>
+                        
+                        <label for="prenom">Votre prénom :</label>
+                        <input type="text" name="prenom" id="prenom" />
+                        
+                        <label for="nom">Votre nom :</label>
+                        <input type="text" name="nom" id="nom" />
+                        
+                        <label for="email">Votre email :</label>
+                        <input type="email" name="nom" id="nom" />
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Quelles sont les raisons de votre venue ?</legend>
+                        
+                        <label for="detendre">Besoin de me détendre</label>
+                        <input type="checkbox" name="detendre" id="detendre" />
+                        
+                        <label for="medecin">Mon médecin m'a conseillé de venir</label>
+                        <input type="checkbox" name="medecin" id="medecin" />
+                        
+                        <label for="amis">Je veux tester avec des amis</label>
+                        <input type="checkbox" name="amis" id="amis" />
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Voulez-vous souscrire à notre programme de fidélité ?</legend>
+                        
+                        <label for="oui">Oui</label>
+                        <input type="radio" id="oui" name="cocher" value="oui" checked/>
+                    
+                        <label for="non">Non</label>
+                        <input type="radio" id="non" name="cocher" value="non" />
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Comment avez-vous connu Ila Yoga ?</legend>
+                        
+                        <select name="connu" id="connu">
+                            <option value="internet">Par Internet</option>
+                            <option value="amis">Par des amis</option>
+                            <option value="pub">Par de la pub</option>
+                            <option value="club">Il y a un club à coté de chez moi</option>
+                            <option value="autre">Autre</option>
+                       </select>
+                    </fieldset>
+                    
+                    <input type="submit" value="Envoyer" />
+                    <input type="reset" value="Annuler" />
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <img src="/module/m03-greenoffice/logo3wa.png" alt="Logo 3wa academy" />
+    
+            <p>
+                Cet exercice de <a href="https://3wa.fr/">3W Academy</a> est mis &agrave disposition <a href="#">pour l'usage personnel des &eacutetudiants. Pas de Rediffusion - Attribution - Pas d'Utilisation - Pas de Modification - International.</a>
+                <br />Les autorisations au-del&agrave du champ de cette licence peuvent &ecirctre obtenus aupr&egrave de <a href="#">contact@3wa.fr</a>. Les maquettes ont &eacutet&eacute r&eacutealis&eacutees par <a href="#">Justine Muller</a>.
+            </p>
+        </footer>
+    </body>
+</html>
