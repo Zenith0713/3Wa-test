@@ -1,0 +1,37 @@
+ul {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#lign1Photo, #lign2Photo {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul img {
+    margin: 1em;
+    padding: 0.5em;
+    transition-property: background-color; /* Active la transition sur background-color */
+    transition-duration: 1s; /* La transition dure 1s */
+}
+
+#nombrePhotoSelect {
+    font-style: italic;
+    color: red;
+}
+
+h1, p {
+    margin-left: 10%;
+}
+
+/*parametre des liens*/
+
+img:hover {
+    background-color: silver;
+}
+
+.selected {
+    background-color: forestgreen;
+}

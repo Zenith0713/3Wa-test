@@ -1,0 +1,652 @@
+/*Couleur*/
+
+/*
+Couleurs :
+Rose: #FB8A9B
+Bleu : #1E3E4B
+Gris : #203E4D
+*/
+
+/*Paramètres généraux*/
+
+* {
+    box-sizing : border-box
+}
+
+body {
+    background-color: #fcfcfc;
+}
+
+h1, h2, h3, .titre {
+    text-align: center;
+}
+
+/*Utilisation des polices*/
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Candal", sans-serif;
+}
+
+
+/*Taille des textes*/
+
+header h1 {
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1em;
+}
+
+header nav {
+    font-size: 1.5em;
+}
+
+main h2 {
+    font-size: 1.4em;
+}
+
+main i {
+    font-size: 2em;
+}
+
+main h3 {
+    font-size: 1.2em;
+}
+
+
+/*Parametrage des liens*/
+
+#enCours i {
+    color: black;
+}
+
+#enCours span {
+    color: #FB8A9B;
+}
+
+
+/*Haut de page*/
+
+/*Haut de page 1ere section*/
+
+header section:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header section:nth-child(1) img {
+    width: 40%;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-right: 10%;
+}
+
+nav li {
+    margin-top: 10%;
+}
+
+nav i {
+    width: 100%;
+    color: #FB8A9B;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Haut de page 2eme section*/
+
+header section:nth-child(2) #article1Header {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    margin-bottom: 0;
+}
+
+header section:nth-child(2) h1 {
+    line-height: 3rem;
+}
+
+header section:nth-child(2) p {
+    margin-bottom: 12%;
+}
+
+
+header section:nth-child(2) input {
+    width: 100%;
+    border: none;
+    background-color: #FB8A9B;
+    padding :3% 0 3% 10%;
+    color: white;
+}
+
+header section:nth-child(2) input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/*Bas de page*/
+
+footer {
+    background-color: #1E3E4B;
+    color: white;
+    line-height: 1rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer p {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*Bas de page 1ere section*/
+
+footer nav ul {
+    margin-top: 20%;
+    padding-top: 10%;
+}
+
+/*Bas de page 2eme section*/
+
+footer section:nth-child(2) {
+    margin-top: 0;
+    background-image: url("../img/background_section.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    clear: both;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+    text-align: center; 
+    margin-top: 50px;
+    margin-bottom:0;
+}
+
+footer p {
+    font-size: 0.6rem;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+footer section:nth-child(2) a {
+    text-decoration: none;
+}
+
+
+/*Milieu de page*/ /*Premiere page*/ /*Home*/
+
+
+#homePage {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#homePage h2 {
+    margin: 20% auto 20% auto;
+    padding-top: 10%;
+    border-style: dashed dashed none dashed; 
+}
+
+#homePage .titre {
+    color: #FB8A9B;
+}
+
+#homePage #article1,#homePage #article2 {
+    margin-bottom: 15%;
+}
+
+
+/*Milieu de page*/ /*Deuxieme page*/ /*Serveur Mutualisé*/
+
+#serveurMutualise {
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5rem;
+}
+
+#serveurMutualise h2 {
+    margin: 20% auto 20% auto;
+    padding-top: 10%;
+    border-style: dashed dashed none dashed; 
+}
+
+#serveurMutualise article {
+    border-style: dashed;
+    margin-top: 15%;
+    padding: 4% 1% 2% 1%;
+}
+
+#serveurMutualise #titreOffre {
+    width: 100%;
+    padding: 2.5rem;
+    background-color: #1E3E4B;
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#serveurMutualise article p:nth-child(2) {
+    margin-left: 10%;
+}
+
+#serveurMutualise ul {
+    list-style-type: circle;
+}
+
+#serveurMutualise button {
+    width: 100%;
+    height: 2.5em;
+    background-color: #FB8A9B;
+    border: none;
+    text-align: center;
+    color: white;
+}
+
+
+/*Milieu de page*/ /*Troisieme page*/ /*Serveur Dédié*/
+
+#serveurDedie {
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5rem;
+}
+
+#serveurDedie h2 {
+    margin: 20% auto 20% auto;
+    padding-top: 10%;
+    border-style: dashed dashed none dashed; 
+}
+
+#serveurDedie article {
+    border-style: dashed;
+    margin-top: 15%;
+    padding: 4% 1% 2% 1%;
+}
+
+#serveurDedie #titreOffre {
+    width: 100%;
+    padding: 2.5rem;
+    background-color: #1E3E4B;
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#serveurDedie ul {
+    list-style-type: circle;
+}
+
+#serveurDedie button {
+    width: 100%;
+    height: 2.5em;
+    background-color: #FB8A9B;
+    border: none;
+    text-align: center;
+    color: white;
+}
+
+
+/*Milieu de page*/ /*Troisieme page*/ /*Solution Cloud*/
+
+#solutionCloud {
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5rem;
+}
+
+#solutionCloud h2 {
+    margin: 20% auto 20% auto;
+    padding-top: 10%;
+    border-style: dashed dashed none dashed; 
+}
+
+#solutionCloud article {
+    border-style: dashed;
+    margin-top: 15%;
+    padding: 4% 1% 2% 1%;
+}
+
+#solutionCloud #titreOffre {
+    width: 100%;
+    padding: 2.5rem;
+    background-color: #1E3E4B;
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#solutionCloud ul {
+    list-style-type: circle;
+}
+
+#solutionCloud button {
+    width: 100%;
+    height: 2.5em;
+    background-color: #FB8A9B;
+    border: none;
+    text-align: center;
+    color: white;
+}
+
+
+/*Milieu de page*/ /*Quatrieme page*/ /*Contact*/
+
+#contact section:nth-child(1) {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5rem;
+}
+
+
+#contact #icon {
+    color: #FB8A9B;
+}
+
+#contact hr {
+    border-radius: 1px;
+    border-style: dashed none none none;
+    color: #FB8A9B;
+}
+
+
+#contact h2 {
+    margin: 20% auto 20% auto;
+    padding-top: 10%;
+    border-style: dashed dashed none dashed; 
+}
+
+#contact section:nth-child(1) article a {
+    text-decoration: none;
+    color: #FB8A9B;
+}
+
+
+#mail, #tel {
+    margin-bottom: 30%;
+}
+
+#contact span {
+    font-style: italic;
+}
+
+#contact iframe {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 0;
+    margin-top: 3rem;
+}
+
+#contact nav ul {
+    margin-top: 0;
+}
+
+
+/*************************************************************************************************/
+/*************************************************************************************************/
+/*************************************** Tablette ************************************************/
+/*************************************************************************************************/
+/*************************************************************************************************/
+
+
+
+@media screen and (min-width: 480px) {
+    
+    /*Taille textes*/
+    
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.5em;
+    }
+
+    header nav {
+        font-size: 2em;
+    }
+
+    main h2 {
+        font-size: 1.9em;
+    }
+
+    main i {
+        font-size: 2.5em;
+    }
+
+    main h3 {
+        font-size: 1.7em;
+    }
+    
+    main p, main li, main button {
+        font-size: 1.2em;
+    }
+    
+    /*Haut de page*/
+    
+    header section:nth-child(1) img {
+        width: 30%;
+        margin-left: 1%;
+    }
+    
+    header section:nth-child(2) input::placeholder {
+        font-size: 1.5em;
+    }
+    
+    /*Bas de page*/
+    
+    footer nav ul {
+        font-size: 1.2em;
+        margin-left: 4%;
+    }
+}
+
+
+/*************************************************************************************************/
+/*************************************************************************************************/
+/************************************** Ordinateur ***********************************************/
+/*************************************************************************************************/
+/*************************************************************************************************/
+
+@media screen and (min-width: 960px) {
+    
+    /*Haut de page*/
+
+    /*Haut de page 1ere section*/
+
+    header section:nth-child(1) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    header section:nth-child(1) img {
+        width: 10%;
+    }
+    
+    header nav {
+        width: 100%;
+    }
+    
+    
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -5%;
+    }
+    
+    header li {
+        margin-left: 10%;
+    }
+    
+    /*Bas de page*/
+    
+    footer nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 0%;
+        margin-top: 10%;
+    }
+    
+    /***************************************************************************/
+    /*************************** 1ere page *** Home ****************************/
+    /***************************************************************************/
+    
+    /*Milieu de page*/
+    
+    #homePage h2 {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    #homePage .flexBoxArticle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #homePage #article1, #homePage #article2 {
+        margin-bottom: 0;
+    }
+    
+    /***************************************************************************/
+    /********************* 2eme page *** Serveur Mutualise *********************/
+    /***************************************************************************/
+    
+    /*Milieu de page*/
+    
+    #serveurMutualise h2 {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    #serveurMutualise .flexBoxArticle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #serveurMutualise article {
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+    
+    /*Animation lien*/
+    
+    #serveurMutualise .flexBoxArticle:hover article {
+       opacity: 0.5; 
+    }
+    
+    #serveurMutualise #article1:hover, #serveurMutualise #article2:hover,#serveurMutualise #article3:hover {
+        opacity: 1;
+    }
+        
+    
+    /***************************************************************************/
+    /*********************** 3eme page *** Serveur Dédié ***********************/
+    /***************************************************************************/
+    
+    /*Milieu de page*/
+    
+    #serveurDedie h2 {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    #serveurDedie .flexBoxArticle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #serveurDedie article {
+        margin-top: 5%;
+        width: 30%;
+    }
+    
+    /*Animation lien*/
+    
+    #serveurDedie .flexBoxArticle:hover article {
+       opacity: 0.5; 
+    }
+    
+    #serveurDedie #article1:hover, #serveurDedie #article2:hover, #serveurDedie #article3:hover {
+        opacity: 1;
+    }
+    
+    /***************************************************************************/
+    /********************** 4eme page *** Solution Cloud ***********************/
+    /***************************************************************************/
+    
+    /*Milieu de page*/
+    
+    #solutionCloud h2 {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    #solutionCloud .flexBoxArticle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #solutionCloud article {
+        margin-top: 5%;
+        width: 30%;
+    }
+    
+    /*Animation lien*/
+    
+    #solutionCloud .flexBoxArticle:hover article {
+       opacity: 0.5; 
+    }
+    
+    #solutionCloud #article1:hover, #solutionCloud #article2:hover,#solutionCloud #article3:hover {
+        opacity: 1;
+    }
+    
+    /***************************************************************************/
+    /************************ 5eme page *** Contact ****************************/
+    /***************************************************************************/
+    
+    /*Milieu de page*/
+    
+    #contact h2 {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    #contact .flexBoxArticle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #contact .flexBoxArticle article {
+        margin-top: 5%;
+        width: 30%;
+    }
+}

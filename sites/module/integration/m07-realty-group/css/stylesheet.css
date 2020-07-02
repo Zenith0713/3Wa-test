@@ -1,0 +1,198 @@
+
+/*Haut de la page*/
+
+/*Logo et texte à coté*/
+
+
+header img {
+    display: block;
+    margin: 10px;
+}
+
+header p {
+    font-size: 1.5em;
+    text-align: left;
+    margin-left: 160px;
+    margin-top: -120px;
+    margin-bottom: 100px;
+    color: #A49E9E;
+}
+
+
+/*nav*/
+
+#menuPrincipal {
+    text-align: center;
+    position:relative;
+}
+
+#menuPrincipal a {
+    text-decoration: none;
+}
+
+#menuPrincipal, #menuPrincipal ul {
+    list-style: none;
+}
+
+#menuPrincipal li {
+    display: inline-block;
+}
+
+#menuPrincipal ul li {
+    display: inherit;
+}
+
+#menuPrincipal > li > a {
+    font-weight: bold;
+    color: #2CBCD6;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+#menuPrincipal > li:hover > a {
+    color: white;
+    background-color: #2CBCD6;
+} 
+
+nav .navigation {
+    display: inline-block;
+}
+
+.sousMenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 1000;
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    text-align: left;
+}
+
+
+#premierTitre {
+    color: #89DEED;
+    font-size: 1.4em;
+    line-height: 20px;
+}
+
+.navigation div ul {
+    margin: 30px 0 10px 0;
+    line-height: 30px;
+}
+
+.navigation div ul li {
+    text-align: center;
+}
+
+.navigation div ul li a {
+    color: white;
+}
+
+#menuPrincipal li:hover .sousMenu {
+    display: block;
+}
+
+/*Premier sous menu*/
+
+.navigation:nth-child(1) div ul:nth-child(1) {
+    margin-left: -30%;
+}
+
+.navigation:nth-child(1) div ul:nth-child(2) {
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 60%;
+}
+
+
+/*Deuxieme sous menu*/ 
+
+.navigation:nth-child(2) div ul:nth-child(1) {
+    margin-left: -30%;
+}
+
+.navigation:nth-child(2) div ul:nth-child(2) {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 60%;
+}
+
+.navigation:nth-child(2) div ul:nth-child(3) {
+    margin-left: -30%;
+    margin-bottom: 50px;
+}
+
+.navigation:nth-child(2) div ul:nth-child(4) {
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 59%;
+}
+
+.navigation:nth-child(2) .sousMenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 1000;
+    margin-top: 20px;
+    width: 100%;
+    height: 350px;
+    text-align: left;
+}
+
+/*espace entre le nav et le main*/
+
+div {
+    width: 100%;
+    height: 10px;
+    background-color: #2CBCD6;
+}
+
+/*Milieu de page*/
+
+main {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+main h1 {
+    color: #2CBCD6;
+}
+
+main p {
+    line-height: 25px;
+}
+
+/*Bas de la page*/
+
+footer {
+    margin-top: 0;
+    background-image: url("../img/background_section.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    clear: both;
+    background-color: #2CBCD6;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+    text-align: center; 
+    margin-top: 50px;
+    margin-bottom:0;
+}
+
+footer p {
+    font-size: 8px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+footer a {
+    color: blue;
+}

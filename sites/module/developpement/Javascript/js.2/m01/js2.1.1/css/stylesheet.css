@@ -1,0 +1,22 @@
+html {
+    margin-left: 5%;
+}
+
+.rectangle {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.rectangleOff {
+    display: none;
+}
+
+.good {
+    background-color: limegreen;
+}
+
+.important {
+    background-color: firebrick;
+}

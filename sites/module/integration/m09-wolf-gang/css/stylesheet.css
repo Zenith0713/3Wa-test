@@ -1,0 +1,516 @@
+@font-face{
+    font-family: "Bodega Sans";
+    src: url("/fonts/BodegaSans_Black.ttf");
+}
+
+
+body {
+    background-color: #444;
+    background-image: url("../img/bg_body.svg");
+    background-repeat: repeat;
+    margin: 1rem;
+    font-family: "Bodega Sans";
+}
+
+
+/*Haut de la page*/
+
+header {
+    background-color: white;
+    background: #ffffff;
+    background: -o-linear-gradient(-55deg, #ffffff 0%,#ffffff 50%,#181818 50%,#181818 100%);
+    background: -moz-linear-gradient(-55deg, #ffffff 0%, #ffffff 50%, #181818 50%, #181818 100%);
+    background: -webkit-linear-gradient(-55deg, #ffffff 0%,#ffffff 50%,#181818 50%,#181818 100%);
+}
+
+header img {
+    margin: 1rem;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+nav {
+    font-size: 1.4em;
+    height: 300px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin: 1rem;
+    margin-top: 70px;
+    text-align: right;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Milieu de page*/
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    color: white;
+    line-height: 50px
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+.colorOrange {
+    color: orange;
+}
+
+
+/*Deuxieme section et Troisieme section*/
+
+main section:nth-child(2) {
+    padding: 1rem 1rem 0.1rem 1rem;
+}
+
+section:nth-child(2) h2, section:nth-child(3) h2 {
+    margin: 1rem;
+}
+
+
+/*Deuxieme section*/
+
+main section article {
+    background-color: white;
+}
+
+main section:nth-child(2) {
+    box-shadow: 0px -3px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-child(2) h2 span {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+main section:nth-child(2) img {
+    width: 100%;
+}
+
+.blocBlanc {
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+section:nth-child(2) h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section:nth-child(2) hr {
+    border-color: orange;
+    width: 80%;
+}
+
+main section:nth-child(2) p {
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
+    line-height: 30px;
+}
+
+button {
+    margin-left: 10%;
+    margin-bottom: 10%;
+    height: 60px;
+    width :80%;
+    border-style: none;
+    background-color: orange;
+    color: white;
+}
+
+
+/*Troisieme section*/
+
+main section:nth-child(3) {
+    box-shadow: 0px -3px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-child(3) h2 span {
+    display: inline-block;
+}
+
+
+section:nth-child(3) p {
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+
+/*Modifications des icons*/
+
+i {
+    color: white;
+    font-size: 50px;
+    margin: 30px 45% 30px 45%;
+}
+
+
+/*Modifications de la video*/
+
+video {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+
+/*Bas de page*/
+
+
+/*1ere section*/
+
+footer section:nth-child(1) {
+    padding: 2rem;
+}
+
+#titreFooter {
+    font-size: 1.4em;
+}
+
+#titreFooter, footer section:nth-child(1) p {
+    text-align: center;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+#section1Li {
+    line-height: 40px;
+}
+
+footer li:nth-child(1) {
+    margin-left: 15%;
+}
+
+footer li:nth-child(3) {
+    margin-left: 13%;
+}
+
+footer li a {
+    color: white;
+}
+
+/*Deuxieme section*/
+
+footer section:nth-child(2) {
+    margin-top: 0;
+    background-image: url("../img/background_section.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    clear: both;
+    color: white;
+}
+
+
+footer section:nth-child(2) img {
+    height: 50px;
+    width: 50px;
+    text-align: center; 
+    margin-top: 50px;
+    margin-bottom:0;
+}
+
+footer section:nth-child(2) p {
+    font-size: 0.6rem;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+footer section:nth-child(2) a {
+    color: white;
+}
+
+
+/*Tablette*/
+
+@media screen and (min-width: 480px) {
+    body{
+        margin: 2rem;
+    }
+    
+    /*Haut de page*/
+    
+    header {
+        background: -webkit-linear-gradient(-55deg, #181818 0%, #181818 50%, #ffffff 50%, #ffffff 100%);
+        background: -moz-linear-gradient(-55deg,#181818 0%, #181818 50%, #ffffff 50%, #ffffff 100%);
+        background: -o-linear-gradient(-55deg, #181818 0%, #181818 50%, #ffffff 50%, #ffffff 100%);
+        background: linear-gradient(-55deg, #181818 0%, #181818 50%, #ffffff 50%, #ffffff 100%);
+    }
+    
+    header img {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    
+    nav {
+        font-size: 2em;
+        height: 180px;
+    }
+    
+    nav ul {
+        margin-top: -180px;
+    }
+    
+    nav li {
+        margin-top: 10px;
+    }
+    
+    /*Milieu de page*/
+    
+    h1, h2, h3 {
+        line-height: 50px
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2.2em;
+    }
+    
+    
+    /*1ere et deuxieme section*/
+    
+    main section:nth-child(1), main section:nth-child(2) {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    
+    /*Deuxieme section*/
+    
+    main section:nth-child(2) {
+        box-shadow: 0px -5px rgba(0, 0, 0, 0.1);
+    }
+    
+    p {
+        font-size: 2em;
+    }
+    
+    button {
+        font-size: 2em;
+    }
+    
+    /*Troisieme section*/
+    
+    main section:nth-child(3) {
+        box-shadow: 0px -5px rgba(0, 0, 0, 0.1);
+    }
+    
+    section:nth-child(3) p {
+        line-height: 50px;
+    }
+    
+    i {
+        font-size: 70px;
+    }
+    
+    /*footer 1ere section*/
+    
+    #titreFooter {
+        font-size: 1.8em;
+    }
+    
+    footer section p,  footer li a {
+        font-size: 1.4em;
+    }
+    
+    footer li:nth-child(1) {
+        margin-left: 15%;
+    }
+    
+    footer li:nth-child(3) {
+        margin-left: 0;
+    }
+    
+    /*footer 2eme section*/
+    
+    footer section:nth-child(2) p {
+        font-size: 1.4em;
+        line-height: 30px;
+    }
+}
+
+/*Ordinateur*/
+
+@media screen and (min-width: 960px) {
+    body {
+        margin: 0;
+    }
+    
+    /*Haut de page*/
+    
+    header img {
+        margin-top: 1%;
+        margin-left: 10%;
+    }
+    
+    nav {
+        font-size: 2em;
+        height: 180px;
+    }
+    
+    nav ul {
+        margin-top: -180px;
+        margin-right: 200px;
+    }
+    
+    /*Milieu de page*/
+    
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    h1, h2, h3 {
+        line-height: 50px
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+    
+    /*main 2eme section*/
+    
+    main section:nth-child(2) {
+        box-shadow: 0px -3px rgba(0, 0, 0, 0.1);
+    }
+    
+    main article {
+        display: inline-block;
+        width: 23%;
+        height: 500px;
+        background-color: white;
+    }
+    
+    main article:nth-child(2), main article:nth-child(3), main article:nth-child(4) {
+        margin-right: 32.5px;
+    }
+
+    section:nth-child(2) hr {
+        width: 90%;
+    }
+
+    main section:nth-child(2) p {
+        font-size: 1.2em;
+    }
+
+    button {
+        height: 40px;
+        width : 80%;
+        font-size: 1.2em;
+    }
+    
+    /*main 3eme section*/
+    
+    main section:nth-child(3) {
+        box-shadow: 0px -3px rgba(0, 0, 0, 0.1);
+    }
+    
+    section:nth-child(3) h2 {
+        margin-top: 150px;
+    }
+    
+    section:nth-child(3) p {
+        
+        line-height: 30px;
+        font-size: 1em;
+        text-align: left;
+        width: 49%;
+    }
+    
+    .reseauSociaux {
+        margin-bottom: 300px;
+    }
+    
+    /*Modifications des icons*/
+
+    i {
+        display: inline-block;
+        font-size: 50px;
+        margin: 30px 40px 0 40px;
+    }
+
+    /*Modifications de la video*/
+    
+    video {
+        float: right;
+        width: 49%;
+        margin-left: 0;
+        margin-top: -555px;
+    }
+    
+    /*footer*/
+    
+    footer {
+        box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /*footer 1ere section*/
+    
+    #titreFooter {
+        font-size: 1.4em;
+    }
+    
+    footer section p,  footer li a {
+        font-size: 1em;
+    }
+    
+    #section1Li {
+        line-height: 20px;
+    }
+    
+    
+    footer li:nth-child(1) {
+        margin-left: 40%;
+    }
+    
+    /*footer 2eme section*/
+    
+    footer section:nth-child(2) p {
+        font-size: 1em;
+        line-height: 20px;
+    }
+}

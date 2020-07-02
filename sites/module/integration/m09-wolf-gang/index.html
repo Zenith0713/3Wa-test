@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="./css/normalize.css" />
+        <link type="text/css" rel="stylesheet" href="./css/stylesheet.css" />
+        
+        <!--Implentation des icones-->
+        
+        <script src="https://kit.fontawesome.com/5bd0b90a1c.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Playfair+Display&display=swap" rel="stylesheet">
+        
+        <!--Implentation du jQuery pour flexslider-->
+        
+        <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+        <script src="./js/jquery.flexslider.js"> </script>
+        <script type="text/javascript" charset="utf-8">
+            $(window).load(function() {
+                $('.flexslider').flexslider({
+                    directionNav: false,
+                });
+            });
+        </script>
+        
+        <!--Titre de mon site-->
+        
+        <title>Mon site</title>
+    </head>
+    
+    <body>
+        <header>
+            <a href="#">
+                <img src="img/logo.svg" alt="Logo Wolf Gang" />
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Nos produits</a></li>
+                    <li><a href="#">Nos tarifs</a></li>
+                    <li><a href="#">Contactez-nous</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section>
+                <h1>Devenez le mozart de la moto avec wolf'<span class="colorOrange">gang</span> !</h1>
+                
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="img/slider/1.jpg" />
+                        </li>
+                        
+                        <li>
+                            <img src="img/slider/2.jpg" />
+                        </li>
+                        
+                        <li>
+                            <img src="img/slider/3.jpg" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Découvrez <span class="colorOrange">nos motos</span></h2>
+                
+                <article>
+                    <a href="#">
+                        <img src="img/team/1.jpg" alt="Photo moto 1" />
+                    </a>
+                    
+                    <div class="blocBlanc">
+                        <h3 class="colorOrange">Moto #1</h3>
+                        <hr>
+                    
+                        <p>Aliquam eget condimentum lacus. Praesent volutpat tempor eros id mollis. Vestibulum nec nisi nulla. Suspendisse quis ligula in arcu semper elementum. Donec bibendum pellentesque egestas. Proin porttitor ultrices ante ac molestie.</p>
+                    
+                        <button name="button">En savoir plus</button>
+                    </div>
+                </article>
+                
+                <article>
+                    <a href="#">
+                        <img src="img/team/2.jpg" alt="Photo moto 2" />
+                    </a>
+                    
+                    <div class="blocBlanc">
+                        <h3 class="colorOrange">Moto #2</h3>
+                        <hr>
+                        
+                        <p>Aliquam eget condimentum lacus. Praesent volutpat tempor eros id mollis. Vestibulum nec nisi nulla. Suspendisse quis ligula in arcu semper elementum. Donec bibendum pellentesque egestas. Proin porttitor ultrices ante ac molestie.</p>
+                    
+                        <button name="button">En savoir plus</button>
+                    </div>
+                </article>
+                
+                <article>
+                    <a href="#">
+                        <img src="img/team/3.jpg" alt="Photo moto 3" />
+                    </a>
+                    
+                    <div class="blocBlanc">
+                        <h3 class="colorOrange">Moto #3</h3>
+                        <hr>
+                        <p>Aliquam eget condimentum lacus. Praesent volutpat tempor eros id mollis. Vestibulum nec nisi nulla. Suspendisse quis ligula in arcu semper elementum. Donec bibendum pellentesque egestas. Proin porttitor ultrices ante ac molestie.</p>
+                        
+                        <button name="button">En savoir plus</button>
+                    </div>
+                </article>
+                
+                <article>
+                    <a href="#">
+                        <img src="img/team/4.jpg" alt="Photo moto 4" />
+                    </a>
+                    
+                    <div class="blocBlanc"> 
+                        <h3 class="colorOrange">Moto #4</h3>
+                        <hr>
+                        <p>Aliquam eget condimentum lacus. Praesent volutpat tempor eros id mollis. Vestibulum nec nisi nulla. Suspendisse quis ligula in arcu semper elementum. Donec bibendum pellentesque egestas. Proin porttitor ultrices ante ac molestie.</p>
+                        
+                        <button name="button">En savoir plus</button>
+                    </div>
+                </article>
+            </section>
+            
+            <section>
+                <h2>Pour nous connaitre <span class="colorOrange">plus en détail</span></h2>
+                
+                <p>Maecenas luctus ipsum sed nisl semper, ut tincidunt sem gravida. Suspendisse potenti. Vestibulum et porta sapien. Nulla sit amet pretium lacus, sit amet finibus nisi.</p>
+                <p>Maecenas luctus ipsum sed nisl semper, ut tincidunt sem gravida. Suspendisse potenti. Vestibulum et porta sapien. Nulla sit amet pretium lacus, sit amet finibus nisi. Donec pulvinar ipsum sit amet diam viverra eleifend. Etiam ac venenatis nulla. Cras elit lectus, fringilla hendrerit ultricies suscipit, egestas eu erat.</p>
+                
+                <div class="reseauSociaux">
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-twitter-square"></i>
+                    <i class="fa fa-linkedin-square"></i>
+                </div>
+                
+                <video controls src="video/video.webm"></video>
+            </section>
+        </main>
+        
+        <footer>
+            <section>
+                <h3 id="titreFooter">Lorem Ipsum</h3>
+                
+                <p id="section1Li">Maecenas luctus ipsum sed nisl semper, ut tincidunt sem gravida. Suspendisse potenti. Vestibulum et porta sapien. Nulla sit amet pretium lacus, sit amet finibus nisi. Donec pulvinar ipsum sit amet diam viverra eleifend. Etiam ac venenatis nulla. Cras elit lectus, fringilla hendrerit ultricies suscipit, egestas eu erat.</p>
+                
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </section>
+            
+            <section>
+                <a href="#">
+                    <img src="/module/integration/m03-greenoffice/logo3wa.png" alt="Logo 3wa academy" />
+                </a>
+    
+                <p>
+                    Cet exercice de <a href="https://3wa.fr/">3W Academy</a> est mis &agrave disposition <a href="#">pour l'usage personnel des &eacutetudiants. Pas de Rediffusion - Attribution - Pas d'Utilisation - Pas de Modification - International.</a>
+                    <br />Les autorisations au-del&agrave du champ de cette licence peuvent &ecirctre obtenus aupr&egrave de <a href="#">contact@3wa.fr</a>. Les maquettes ont &eacutet&eacute r&eacutealis&eacutees par <a href="#">Justine Muller</a>.
+                </p>
+            </section>
+        </footer>
+    </body>
+</html>
