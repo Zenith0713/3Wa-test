@@ -1,0 +1,935 @@
+@font-face{
+    font-family: "Amaranth";
+    src: url("../fonts/amaranth.otf");
+}
+
+body {
+    font-family: "Amaranth";
+}
+
+ul {
+    list-style: none;
+}
+
+/*Haut de page*/
+
+header {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/*Haut de page 1ere section*/
+
+header section:nth-child(1) p {
+    margin: 0 0 6rem 0;
+    background-color: #879e0f;
+    text-align: center;
+    padding: 0.4em;
+}
+
+header section:nth-child(1) img {
+    display: none;
+}
+
+/*Haut de page 2eme section*/
+
+header section:nth-child(2) article:nth-child(1) p {
+    position: absolute;
+    padding: 0.5em 1em 0.5em 0;
+    top: 40px;
+    left: 0;
+    border: 1px solid black;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10rem;
+}
+
+header section:nth-child(2) article:nth-child(1) p span:nth-child(1) {
+    display: none;
+}
+
+header i {
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 10rem;
+}
+
+header section:nth-child(2) article:nth-child(1) img {
+    margin-left: 18%;
+    margin-right: 20%;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -10%;
+}
+
+header li {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0.6rem;
+}
+
+header a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/*Bas de page*/
+
+footer {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    line-height: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Bas de page 1ere section*/
+
+footer section:nth-child(1) {
+    text-transform: uppercase;
+    background-color: #879e0f;
+    padding-bottom: 1rem;
+    margin-top: 10%;
+}
+
+footer section:nth-child(1) a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer section:nth-child(1) .ul {
+    padding-left: 0;
+}
+
+footer section:nth-child(1) i {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+footer section:nth-child(1) div div:nth-child(1), footer section:nth-child(1) div div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section:nth-child(1) .ul {
+    text-align: center;
+}
+
+footer .ul{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+footer .ul a{
+    width:50%;
+}
+
+
+
+footer section:nth-child(1) .ul div:nth-child(2) a:nth-child(1) {
+    margin-left: 10%;
+}
+
+footer section:nth-child(1) .ul div:nth-child(2) a:nth-child(1) i {
+    margin-left: -10%;
+}
+
+footer section:nth-child(1) .ul div:nth-child(2) a:nth-child(2) {
+    margin-right: 8%;
+}
+
+footer section:nth-child(1) .ul a:last-child {
+    text-align: center;
+}
+
+
+/*Bas de page 2eme section*/
+
+footer section:nth-child(2) {
+    text-align: center;
+}
+
+footer section:nth-child(2) a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer section:nth-child(2) ul {
+    padding-left: 0;
+}
+
+.titleListFooter {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+footer section:nth-child(2) ul:nth-child(1) li {
+    margin-bottom: 1rem;
+}
+
+
+/*Bas de page 3eme section*/
+
+footer section:nth-child(3) {
+    margin-top: 0;
+    background-image: url("../img/background_section.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    clear: both;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+    text-align: center; 
+    margin-top: 50px;
+    margin-bottom:0;
+}
+
+footer p {
+    font-size: 0.6rem;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+footer section:nth-child(3) a {
+    text-decoration: none;
+}
+
+
+/******************************************************************************/
+/***************************** Page d'accueil *********************************/
+/******************************************************************************/
+
+/*Milieu de page*/
+
+#home {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#home h2 {
+    font-size: 2rem;
+    color: #99b11d;
+    margin: 0;
+}
+
+#home .hr {
+    /* centre verticalement les enfants entre eux */
+    align-items: center;
+
+    /* active flexbox */
+    display: flex;
+
+    /* garde le texte centré s’il passe sur plusieurs lignes ou si flexbox n’est pas supporté */
+    text-align: center;
+}
+
+#home .hr::before,
+#home .hr::after {
+    /* la couleur est volontairement absente ; ainsi elle sera celle du texte */
+    border-top: .0625em solid;
+
+    /* nécessaire pour afficher les pseudo-éléments */
+    content: "";
+
+    /* partage le reste de la largeur disponible */
+    flex: 1;
+
+    /* espace les traits du texte */
+    margin: 0.5em;
+}
+
+
+/*Milieu de page 1ere section*/
+
+#home section:nth-child(1) {
+    display: none;
+}
+
+/*Millieu de page 2eme section*/
+
+
+
+#home section:nth-child(1) .ul2 {
+    text-align: center;
+}
+
+#home .ul2 {
+    display:flex;
+    flex-direction: column;
+}
+
+
+#home section:nth-child(2) figure {
+    text-align: center;
+}
+
+#home section:nth-child(2) figcaption {
+    font-size: 1.5rem;
+}
+
+/*Milieu de page 3eme section*/
+
+#home section:nth-child(3) article {
+    text-align: center;
+}
+
+#home section:nth-child(3) article figcaption {
+    font-size: 1.5rem;
+}
+
+#home section:nth-child(3) article span {
+    font-size: 1.5rem;
+}
+
+#home section:nth-child(3) button {
+    padding: 1rem 2rem 1rem 2rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: #b09067;
+    border: none;
+    margin-bottom: 10%;
+}
+
+
+/******************************************************************************/
+/****************************** Page des Thés *********************************/
+/******************************************************************************/
+
+/*Milieu de page*/
+
+
+#tea section img:nth-child(1) {
+    display: none;
+}
+
+#tea {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#tea h2 {
+    font-size: 2rem;
+    color: #99b11d;
+    margin: 0;
+}
+
+#tea .hr {
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+#tea .hr::before,
+#tea .hr::after {
+    border-top: .0625em solid;
+    content: "";
+    flex: 1;
+    margin: 0.5em;
+}
+
+#tea article {
+    text-align: center;
+}
+
+#tea img {
+    width: 100%;
+}
+
+#tea article h3 {
+    font-size: 1.5rem;
+}
+
+#tea article span {
+    font-size: 1.5rem;
+}
+
+#tea article button {
+    padding: 1rem 2rem 1rem 2rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: #b09067;
+    border: none;
+    margin-bottom: 10%;
+}
+
+
+/******************************************************************************/
+/****************************** Page Epicerie *********************************/
+/******************************************************************************/
+
+
+/*Milieu de page*/
+
+#epicerie {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#epicerie article:nth-child(1) {
+    text-align: center;
+}
+
+#epicerie #green {
+    text-decoration: none;
+    color: #99b11d;
+}
+
+#epicerie #ref {
+    margin-bottom: 0;
+}
+
+
+#epicerie .rating {
+	width: 100%;
+	margin-left: -25%;
+	font-size: 15px;
+	overflow:hidden;
+}
+
+#epicerie .rating a {
+   color: #aaa;
+   text-decoration: none;
+   font-size: 3em;
+   transition: color .4s;
+   float: right;
+}
+
+#epicerie .rating a:hover,
+#epicerie .rating a:focus,
+#epicerie .rating a:hover ~ a,
+#epicerie .rating a:focus ~ a {
+   color: yellow;
+   cursor: pointer;
+}
+
+#epicerie form select {
+    width: 60%;
+    border: 1px solid black;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+}
+
+
+#epicerie #prix {
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+
+#epicerie article button {
+    padding: 1rem 2rem 1rem 2rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: #b09067;
+    border: none;
+}
+
+#epicerie p i {
+    color: red;
+}
+
+#epicerie span {
+    font-weight: bold;
+}
+
+
+/******************************************************************************/
+/*************************** Page Notre Histoire ******************************/
+/******************************************************************************/
+
+/*Milieu de page*/
+
+#history {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#history h1 {
+    font-size: 3rem;
+}
+
+/*Milieu de page 1ere section*/
+
+
+#history h2 {
+    font-size: 2rem;
+    color: #99b11d;
+    margin: 0;
+}
+
+#history section:nth-child(1) img {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+/*Milieu de page 2eme section*/
+
+#history section:nth-child(2) div {
+    background-color: #eaefcf;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+#history section:nth-child(2) div img {
+    width: 30%;
+}
+
+
+/******************************************************************************/
+/******************************************************************************/
+/******************************** Tablette ************************************/
+/******************************************************************************/
+/******************************************************************************/
+
+@media screen and (min-width: 480px) {
+    
+    /*Haut de page*/
+    
+    /*Haut de page 1ere section*/
+    
+    header section:nth-child(1) p {
+        margin: 0 0 3rem 0;
+        padding: 0.8em;
+        font-size: 1.2rem;
+    }
+
+    header section:nth-child(1) img {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 15%;
+    }
+    
+    
+    /*Haut de page 2eme section*/
+    
+    header section:nth-child(2) article:nth-child(1) p {
+        position: static;
+        float: right;
+        border: none;
+    }
+
+    header section:nth-child(2) article:nth-child(1) p span:nth-child(1) {
+        display: inline-block;
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    header section:nth-child(2) article:nth-child(1) img {
+        margin-left: 2%;
+        margin-right: 0;
+    }
+    
+    header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 3%;
+        margin-left: -4%;
+        padding-bottom: 5%;
+    }
+    
+    
+    /*Bas de page*/
+    
+    /*Bas de page 1ere section*/
+    
+    
+    footer section:nth-child(1) {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    footer section:nth-child(1) .ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    
+    .ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    footer .ul a{
+    width:15%;
+    }
+
+    footer section:nth-child(1) .ul a:nth-child(1) {
+    margin-left: 0;
+    }
+
+    footer section:nth-child(1) .ul div:nth-child(2) a:nth-child(1) {
+    margin-left: 0;
+    }
+
+    footer section:nth-child(1) .ul div:nth-child(2) a:nth-child(1) i {
+    margin-left: 0;
+    }
+
+    footer section:nth-child(1) .ul div:nth-child(2) a {
+    margin-right: 0;
+    }
+    
+    
+    /*Bas de page 2eme section*/
+    
+    footer section:nth-child(2) {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    footer section:nth-child(2) ul:nth-child(1) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    footer section:nth-child(2) ul:nth-child(1) ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .titleListFooter {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+
+    /******************************************************************************/
+    /***************************** Page d'accueil *********************************/
+    /******************************************************************************/
+
+    /*Milieu de page*/
+    
+    /*Milieu de page 1ere section*/
+    
+    #home section:nth-child(1) {
+        display: block;
+        text-align: center;
+        margin: auto -3% auto -3%;
+    }
+    
+    #home section:nth-child(1) h1 {
+        color: #99b11d;
+        font-size: 2.5rem;
+    }
+    
+    #home section:nth-child(1) figure {
+        margin: auto 0 2rem 0;
+    }
+    
+    #home section:nth-child(1) img {
+        width: 100%;
+    }
+    
+
+    #home .ul2 {
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: 5%;
+    }
+
+    #home .ul2 figure {
+        width: 35%;
+    }
+    
+    #home #lastFigure {
+        margin-left: 29%;
+    }
+
+    /******************************************************************************/
+    /****************************** Page des Thés *********************************/
+    /******************************************************************************/
+
+    /*Milieu de page*/
+    
+    #tea section div {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    
+    /******************************************************************************/
+    /****************************** Page Epicerie *********************************/
+    /******************************************************************************/
+
+
+    /*Milieu de page*/
+    
+    #epicerie section article #flexbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    
+    #epicerie section article div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    
+    
+    #epicerie section article div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    
+    #epicerie #stars{
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+        margin-top: 10%;
+        
+    }
+    
+    
+    #epicerie section article img {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #epicerie section article #div3 {
+        margin-top: 5%;
+    }
+    
+    #epicerie section article #div3 select {
+        width: 100%;
+    }
+    
+    /******************************************************************************/
+    /**************************** Page Notre Histoire *****************************/
+    /******************************************************************************/
+
+
+    /*Milieu de page*/
+    
+    #history section:nth-child(1) img {
+        float: left;
+        margin: 2rem 1rem 1rem 1rem;
+        width: 60%;
+    }
+    
+    #history section:nth-child(1) #photoXavier {
+        float: right;
+    }
+    
+    #history p {
+        font-size: 1.2rem;
+    }
+    
+    #history h3 {
+        font-size: 1.4rem;
+    }
+}
+
+
+/******************************************************************************/
+/******************************************************************************/
+/****************************** Ordinateur ************************************/
+/******************************************************************************/
+/******************************************************************************/
+
+@media screen and (min-width: 960px) {
+    
+    /*Parametrage des liens*/
+    
+    header nav li:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    
+    
+    button:hover {
+        opacity: 0.7;
+    }
+    
+    #home .ul2:hover #figure, #home .ul2:hover #lastFigure {
+        opacity: 0.5;
+    }
+    
+    #home .ul2 #figure:hover, #home .ul2 #lastFigure:hover {
+        opacity: 1;
+    }
+    
+    
+    /*Haut de page*/
+    
+    /*Haut de page 1ere section*/
+    
+    header section:nth-child(1) img {
+        width: 10%;
+    }
+    
+    /*Haut de page 2eme section*/
+    
+    header section:nth-child(2) {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    header section:nth-child(2) article:nth-child(1) img {
+        margin-left: 0;
+    }
+    
+    header li {
+        padding: 1rem;
+    }
+    
+    /*Bas de page*/
+    
+    /*Bas de page 1ere section*/
+    
+    footer section:nth-child(1) div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    footer .ul a{
+        width:15%;
+    }
+    
+    /******************************************************************************/
+    /***************************** Page d'accueil *********************************/
+    /******************************************************************************/
+
+    /*Milieu de page*/
+    
+    #home {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    
+    /*Milieu de page 2eme section*/
+    
+    #home .ul2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 10%;
+        
+    }
+
+    #home .ul2 figure {
+        width: 10%;
+    }
+    
+    #home #lastFigure {
+        margin-left: 2rem;
+    }
+    
+    
+    /*Milieu de page 3eme section*/
+    
+    #home section:nth-child(3) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    
+    /******************************************************************************/
+    /****************************** Page des Thés *********************************/
+    /******************************************************************************/
+    
+    /*Milieu de page*/
+    
+    #tea {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    #tea section img:nth-child(1) {
+        display: block;
+        float: left;
+        width: 10%;
+    }
+    
+    #tea h2 {
+        margin-top: 10%;
+    }
+    
+    #tea section div {
+        margin-left: 0%;
+        margin-right: 0%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    
+    /******************************************************************************/
+    /****************************** Page Epicerie *********************************/
+    /******************************************************************************/
+
+
+    /*Milieu de page*/
+    
+    #epicerie {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    #epicerie img {
+        width: 40%;
+    }
+    
+     #epicerie section article #div3 {
+        margin-top: 17%;
+    }
+    
+    /******************************************************************************/
+    /**************************** Page Notre Histoire *****************************/
+    /******************************************************************************/
+
+
+    /*Milieu de page*/
+    
+    #history {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    #history #conceptArticle2 div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}

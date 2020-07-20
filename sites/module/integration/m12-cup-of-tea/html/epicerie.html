@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Cup Of Tea - Epicerie</title>
+        
+        <!-- Mise à l'echelle pour la taille des différents écrans -->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Document css pour la mise en forme-->
+        
+        <link type="text/css" rel="stylesheet" href="../css/normalize.css" />
+        <link type="text/css" rel="stylesheet" href="../css/stylesheet.css" />
+        
+        <!-- Lien pour la mise en place des icônes -->
+        
+        <script src="https://kit.fontawesome.com/5bd0b90a1c.js" crossorigin="anonymous"></script>
+        
+    </head>
+    
+    <body>
+        <header>
+            <section>
+                <p>Livraison offerte à partir de 65€ d'achat !</p>
+                
+                <img src="../img/ribbon.svg" alt="Puce 'élu meilleur thé'"/>
+            </section>
+            
+            <section>
+                <article>
+                    <a href="index.html">
+                        <img src="../img/logo.png" alt="Logo Cup of Tea" />
+                    </a>
+                    
+                    <p><span>Mon panier</span> <i class="fas fa-shopping-cart"></i> <span>42,00 €</span></p>
+                </article>
+                
+                <article>
+                    <nav>
+                        <ul>
+                            <li><a href="tea.html">Thés</a></li>
+                            <li><a href="#">Grand Crus</a></li>
+                            <li><a href="#">Accesoires</a></li>
+                            <li><a href="epicerie.html">Epicerie</a></li>
+                            <li><a href="history.html">Notre histoire</a></li>
+                        </ul>
+                    </nav>
+                </article>
+            </section>
+        </header>
+        
+        <main id="epicerie">
+            <section>
+                <article>
+                    <div id="flexbox">
+                    <div>
+                        <h1>Blue of London</h1>
+                        <p>Thé noir à la bergamote</p>
+                
+                        <p id="ref">Ref : 133742</p>
+                    </div>
+                    
+                    <div>
+                        <div class="rating" id="stars"><!--
+                            --><a href="#5" title="Donner 5 étoiles">★</a><!--
+                            --><a href="#4" title="Donner 4 étoiles">★</a><!--
+                            --><a href="#3" title="Donner 3 étoiles">★</a><!--
+                            --><a href="#2" title="Donner 2 étoiles">★</a><!--
+                            --><a href="#1" title="Donner 1 étoile">★</a>
+                        </div>
+                    
+                        <a href="#" id="green">Voir les 56 avis clients</a>
+                    </div>
+                    </div>
+                    
+                    <div id="flexbox">
+                    <img src="../img/product/product3.jpg" alt="" />
+                    
+                    <div id="div3">
+                        <form method="post" action="traitement.php">
+                            <p>
+                                <select name="quanti-thé" id="quanti-thé">
+                                    <option value="100gr">Pochette de 100gr</option>
+                                    <option value="200gr">Pochette de 200gr</option>
+                                    <option value="500gr">Boîte de 500gr</option>
+                                </select>
+                            </p>
+                        </form>
+                    
+                        <p id="prix">9, 00€</p>
+                    
+                        <button>Ajouter au panier</button>
+                    
+                        <p><i class="fas fa-heart"></i> <a href="#" id="green">Ajouter à ma liste d'envie</a></p>
+                    </div>
+                    </div>
+                </article>
+                
+                <article>
+                    <p>Blue of London est un Earl Grey d'exception qui associe un des meilleurs thés noirs au monde, le Yunnan, et une bergamote fraîche et délicate. Un mélange remarquable d'équilibre et de finesse.</p>
+                    
+                    <p>Le Earl Grey est un grand classique anglais, depuis que Charles Grey, comte (earl en anglais) de Falodon et Ministre des Affaires étrangères du Royaume britannique au milieu du XIX ème siècle, reçut d'un mandarin chinois une vieille recette consistant à aromatiser son thé avec de la bergamote.</p>
+                
+                    <span>
+                        <p>Profitez d'une remise de 5% sur la boîte de 500g (prix déjà remisé).</p>
+                        
+                        <p>Profitez d'une remise de 10% sur le lot de 2 boîtes de 500g (prix déjà remisé).</p>
+                    </span>
+                </article>
+            </section>
+        </main>
+        
+        <footer>
+            <section>
+                <div class="ul"> <!--Retrait des div-->
+                    
+                        <a href="#"><i class="fas fa-lock"></i> Paiement sécurisé</a>
+                        <a href="#"><i class="fas fa-truck"></i> Ma Livraison Offerte</a>
+
+                        <a href="#"><i class="far fa-money-bill-alt"></i> Carte De Fidélité</a>
+                        <a href="#"><i class="fas fa-phone-alt"></i> Service Client</a>
+
+                        <a href="#"><i class="fas fa-check-circle"></i> Garantie Qualité</a>
+                </div>
+            </section>
+            
+            <section>
+                <ul>
+                    <li>
+                        <ul>
+                            <li class="titleListFooter">Cup of Tea</li>
+                            <li><a href="#">Notre histoire</a></li>
+                            <li><a href="#">Nos boutiques</a></li>
+                            <li><a href="#">Le Thé de A à Z</a></li>
+                            <li><a href="#">Espace clients professionnels</a></li>
+                            <li><a href="#">Recrutement</a></li>
+                            <li><a href="#">Contactez-nous !</a></li>
+                            <li><a href="#">l'École du Thé</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <ul>
+                            <li class="titleListFooter">Commandez en ligne</li>
+                            <li><a href="#">Première visite</a></li>
+                            <li><a href="#">Aide - FAQ</a></li>
+                            <li><a href="#">Service client</a></li>
+                            <li><a href="#">Suivre ma commande</a></li>
+                            <li><a href="#">Conditions générales de vente</a></li>
+                            <li><a href="#">Informations légales</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <ul>
+                            <li class="titleListFooter">Suivez-nous</li>
+                            <li><a href="#">Notre histoire</a></li>
+                            <li><a href="#">Nos boutiques</a></li>
+                            <li><a href="#">Le Thé de A à Z</a></li>
+                            <li><a href="#">Espace clients professionnels</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            
+            <section>
+                <a href="#">
+                    <img src="/module/integration/m03-greenoffice/logo3wa.png" alt="Logo 3wa academy" />
+                </a>
+    
+                <p>
+                    Cet exercice de <a href="https://3wa.fr/">3W Academy</a> est mis à disposition <a href="#">pour l'usage personnel des étudiants. Pas de Rediffusion - Attribution - Pas d'Utilisation - Pas de Modification - International.</a>
+                    <br />Les autorisations au-delà du champ de cette licence peuvent être obtenus auprès de <a href="#">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a href="#">Justine Muller</a>.
+                </p>
+            </section>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+/* ******************************************************* */
+/* ************** Les éléments du caroussel ************** */
+/* ******************************************************* */
+
+/* Boite à outils */
+.project-toolbar {
+
+}
+
+/*
+*  Embarquer figure et .slider-navigation
+*  dans un élément en position relative : .slider-layout
+*    -> les éléments enfants seront en position absolute afin d'apparaître sur la photo :
+*
+*       1 - liens précédent et suivant (.next,.prev)
+*       2 - figcaption (.slider-legend )
+*
+*    -> la hauteur de .slider-layout sera donc celle des photos
+*/
+.slider-layout {
+  position : relative;
+}
+
+.active figcaption {
+  margin-bottom: 100px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+ul li:nth-child(1) {
+  margin-left: 35%;
+}
+
+.puce {
+    margin-right: 10px;
+    height: 30px; 
+		width: 30px; 
+		background-color: white;
+		border: white;
+		border-radius: 50%; 
+}
+
+.puceActive {
+  background-color: orange;
+}
+
+button {
+    padding: 3rem;
+}
+
+
+#button-playDiapo, #button-random {
+  margin: 3rem 3rem 1rem 1rem;
+  padding: 2.5rem 3rem 2.5rem 3rem;
+  background-color: orange;
+  border: none;
+}
+
+#button-playDiapo {
+  margin-left: 40%;
+}
+
+#button-next, #button-prev {
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  border: none;
+  font-size: 3rem;
+}
+
+
+#button-next {
+  position: absolute;
+  margin-left: 58%;
+  margin-top: -25%;
+  
+}
+
+#button-prev {
+  position: absolute;
+  margin-left: -5%;
+  margin-top: -25%;
+}
+
+

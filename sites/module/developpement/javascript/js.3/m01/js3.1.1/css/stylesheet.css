@@ -1,0 +1,41 @@
+html {
+    background-color: lightblue;
+}
+
+.formDisplayButton {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.formContact {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    
+    font-size: 1.5rem;
+}
+
+.formActive {
+    display: flex;
+}
+
+input {
+    margin-left: 35%;
+    width: 30%;
+    border-radius: 10rem;
+}
+
+button {
+    margin-left: 45%;
+    width: 10%;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.clearContactButton, .deleteOneContactButton {
+    margin-left: 2%;
+    margin-right: 80%;
+}
+

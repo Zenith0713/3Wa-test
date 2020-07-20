@@ -1,0 +1,45 @@
+html {
+    font-size: 2rem;
+}
+
+#listeDesCommandes table {
+    width: 100%;
+    border: 1px solid black;
+}
+
+#listeDesCommandes #titreTable {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+#listeDesCommandes #secondTitreTable th {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+#listeDesCommandes td {
+    text-align: center;
+}
+
+#listeDesCommandes a {
+    color: black;
+    text-decoration: none;
+}
+
+#listeDesCommandes a:hover {
+    color: red;
+}
+
+#detailDesCommandes {
+    display: flex;
+    flex-direction: column;
+}
+
+#detailDesCommandes section {
+    display: flex;
+    flex-direction: row;
+}
+
+#detailDesCommandes p {
+    margin-left: 2%;
+}

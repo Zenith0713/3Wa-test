@@ -1,0 +1,54 @@
+body {
+    background-color: #D3D3D3;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+form {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, select {
+    margin-bottom: 3rem;
+}
+
+label {
+    margin-bottom: 1rem;
+}
+
+input {
+    padding: 0.7rem 0 0.7rem 1rem;
+    border-radius: 2rem;
+
+}
+    
+ul {
+    margin-bottom: 2%;
+}
+    
+.textBarre {
+    text-decoration: line-through;
+}
+
+    
+#button {
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 1rem 2rem 1rem 2rem;
+    border: none;
+    background-color: orange;
+    border-radius: 1rem;
+}
+
+
+#flex1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

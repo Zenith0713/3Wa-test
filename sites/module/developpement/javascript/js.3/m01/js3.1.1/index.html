@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Local storage</title>
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    <body>
+        <h1>Formulaire :</h1>
+        
+        <button class="formDisplayButton">Ajouter un contact</button>
+        
+        <form action="index.html" method="POST" class="display formContact">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="userName" placeholder="Votre prénom">
+            
+            <label for="mail">E-mail :</label>
+            <input type="email" id="mail" name="userMail" placeholder="Votre e-mail">
+            
+            <label for="phone">Numéro de telephone :</label>
+            <input type="tel" id="phone" name="userPhone" placeholder="Votre numéro de telephone">
+            
+            <button type="submit" id="sendForm">Envoyer</button>
+            <button type="reset" id="reset">Réinitialiser le formulaire</button>
+        </form>
+        
+        <button class="clearContactButton">Effacer tout les contacts</button>
+        
+        <form action="index.html" method="POST">
+            <button type="submit" class="deleteOneContactButton">Effacer</button>
+        </form>
+        
+        <div class="containers">
+            
+        </div>
+        
+        <script type="module" src="./js/script.js"></script>
+    </body>
+</html>
